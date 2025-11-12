@@ -1,0 +1,14 @@
+# Ignore compiled class files
+*.class
+
+# Ignore data files
+students.dat
+
+# Ignore IDE-specific files
+*.iml
+.idea/
+*.log
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
