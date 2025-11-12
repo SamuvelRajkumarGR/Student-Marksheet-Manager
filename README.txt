@@ -8,7 +8,6 @@ A Java-based GUI application for managing student academic records, generating p
 - 📊 Live dashboard showing top scorer, average marks, and grade distribution
 - 📝 Export individual or batch marksheets as professionally formatted PDFs
 - 📂 Import/export student data via CSV
-- 📧 Email marksheets to students (optional module)
 - 🧭 Guided update wizard to minimize admin errors
 - 🎨 Branded UI with college logo and color-coded stats
 
@@ -19,7 +18,6 @@ A Java-based GUI application for managing student academic records, generating p
 | Front End              | Java Swing                          |
 | Back End               | Java                                |
 | PDF Export             | iTextPDF 5.5.13.3                   |
-| Email Integration      | JavaMail + Activation JAR           |
 | IDE                    | IntelliJ IDEA / NetBeans            |
 | Data Format            | CSV, DAT                            |
 | Image Assets           | College Logo (JPG)                  |
@@ -40,16 +38,22 @@ A Java-based GUI application for managing student academic records, generating p
   java -cp ".;itextpdf-5.5.13.3.jar;javax.mail.jar;activation.jar" LoginScreen
 
 File Structure
-StudentMarksheetManager/
+├── AddStudentDialog.java
+├── ButtonPanel.java
+├── ChartPanel.java
+├── ChartWindow.java
+├── ExportCSVDialog.java
+├── ExportDialog.java
+├── ImportCSVDialog.java
 ├── LoginScreen.java
+├── MarksheetApp.java
 ├── MarksheetGUI.java
 ├── MarksheetManager.java
-├── ExportDialog.java
+├── NameSearchDialog.java
+├── PDFTest.java
+├── PreviewDialog.java
+├── SearchDialog.java
 ├── Student.java
 ├── UpdateStudentDialog.java
-├── ChartPanel.java
-├── students.csv
-├── itextpdf-5.5.13.3.jar
-├── javax.mail.jar
-├── activation.jar
-└── eec_logo.jpg
+└── README.txt
+
