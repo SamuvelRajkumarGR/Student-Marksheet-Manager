@@ -1,21 +1,55 @@
-Student Marksheet Management System
------------------------------------
+# 🎓 Student Marksheet Manager
 
-📌 Features:
-- Add, update, delete student records
-- Save/load data using file handling
-- Export to CSV for Excel/Sheets
-- View statistics: average, top scorer, grade distribution
-- Filter students by grade
+A Java-based GUI application for managing student academic records, generating professional PDF marksheets, and visualizing performance analytics.
 
-🛠 How to Run:
-1. Open terminal in project folder
-2. Compile: javac *.java
-3. Run: java MarksheetGUI
+## 📌 Features
 
-🗂 Files:
-- Student.java: Model class
-- MarksheetManager.java: Logic and data handling
-- MarksheetGUI.java: Swing-based GUI
-- students.dat: Saved student data
-- students.csv: Exported marksheet
+- 🧑‍🎓 Add, update, and delete student records
+- 📊 Live dashboard showing top scorer, average marks, and grade distribution
+- 📝 Export individual or batch marksheets as professionally formatted PDFs
+- 📂 Import/export student data via CSV
+- 📧 Email marksheets to students (optional module)
+- 🧭 Guided update wizard to minimize admin errors
+- 🎨 Branded UI with college logo and color-coded stats
+
+## 🛠️ Technologies Used
+
+| Category               | Tools/Tech Used                     |
+|------------------------|-------------------------------------|
+| Front End              | Java Swing                          |
+| Back End               | Java                                |
+| PDF Export             | iTextPDF 5.5.13.3                   |
+| Email Integration      | JavaMail + Activation JAR           |
+| IDE                    | IntelliJ IDEA / NetBeans            |
+| Data Format            | CSV, DAT                            |
+| Image Assets           | College Logo (JPG)                  |
+
+## 📦 Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/SamuvelRajkumarGR/Student-Marksheet-Manager.git
+   cd Student-Marksheet-Manager
+
+2. Compile the project:
+  ```bash
+  javac -cp "itextpdf-5.5.13.3.jar;javax.mail.jar;activation.jar" *.java
+
+3. Run the application:
+  ```bash
+  java -cp ".;itextpdf-5.5.13.3.jar;javax.mail.jar;activation.jar" LoginScreen
+
+File Structure
+StudentMarksheetManager/
+├── LoginScreen.java
+├── MarksheetGUI.java
+├── MarksheetManager.java
+├── ExportDialog.java
+├── Student.java
+├── UpdateStudentDialog.java
+├── ChartPanel.java
+├── students.csv
+├── itextpdf-5.5.13.3.jar
+├── javax.mail.jar
+├── activation.jar
+└── eec_logo.jpg
